@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Roboto+Slab:wght@100..900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --main-color: #33691e;
+}
+* {
+  font-family: "Roboto Slab", serif !important;
+}
+body {
+  background-image: url("/assets/img/background_bd.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 100vh;
+}
+@media (min-width: 1024px) {
+  body {
+    overflow: hidden;
+  }
+}
+@layer utilities {
+  .h-home {
+    height: calc(100vh - 66px);
+  }
+  .main-color {
+    color: var(--main-color);
+  }
+  .main-color-border {
+    border-color: var(--main-color);
+  }
+  .main-box-shadow {
+    box-shadow: #33691e 1.95px 1.95px 2.6px;
+  }
+}
